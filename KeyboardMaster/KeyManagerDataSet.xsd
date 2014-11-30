@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KeyManagerDataSet" targetNamespace="http://tempuri.org/KeyManagerDataSet.xsd" xmlns:mstns="http://tempuri.org/KeyManagerDataSet.xsd" xmlns="http://tempuri.org/KeyManagerDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KeyManagerDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="KeyManagerDataSet" msprop:Generator_UserDSName="KeyManagerDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="KeyManager" msprop:Generator_TableClassName="KeyManagerDataTable" msprop:Generator_TableVarName="tableKeyManager" msprop:Generator_RowChangedName="KeyManagerRowChanged" msprop:Generator_TablePropName="KeyManager" msprop:Generator_RowDeletingName="KeyManagerRowDeleting" msprop:Generator_RowChangingName="KeyManagerRowChanging" msprop:Generator_RowEvHandlerName="KeyManagerRowChangeEventHandler" msprop:Generator_RowDeletedName="KeyManagerRowDeleted" msprop:Generator_RowClassName="KeyManagerRow" msprop:Generator_UserTableName="KeyManager" msprop:Generator_RowEvArgName="KeyManagerRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActivationSequence" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ActivationSequence" msprop:Generator_ColumnVarNameInTable="columnActivationSequence" msprop:Generator_ColumnPropNameInTable="ActivationSequenceColumn" msprop:Generator_UserColumnName="ActivationSequence" type="xs:string" minOccurs="0" />
+              <xs:element name="Items" msprop:Generator_ColumnVarNameInTable="columnItems" msprop:Generator_ColumnPropNameInRow="Items" msprop:Generator_ColumnPropNameInTable="ItemsColumn" msprop:Generator_UserColumnName="Items" type="xs:string" minOccurs="0" />
+              <xs:element name="SequenceTimeout" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SequenceTimeout" msprop:Generator_ColumnVarNameInTable="columnSequenceTimeout" msprop:Generator_ColumnPropNameInTable="SequenceTimeoutColumn" msprop:Generator_UserColumnName="SequenceTimeout" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:short" default="0" minOccurs="0" />
+              <xs:element name="ActivationType" msprop:Generator_ColumnVarNameInTable="columnActivationType" msprop:Generator_ColumnPropNameInRow="ActivationType" msprop:Generator_ColumnPropNameInTable="ActivationTypeColumn" msprop:Generator_UserColumnName="ActivationType" type="xs:string" minOccurs="0" />
+              <xs:element name="ComboKeyModifiers" msprop:Generator_ColumnVarNameInTable="columnComboKeyModifiers" msprop:Generator_ColumnPropNameInRow="ComboKeyModifiers" msprop:nullValue="0" msprop:Generator_ColumnPropNameInTable="ComboKeyModifiersColumn" msprop:Generator_UserColumnName="ComboKeyModifiers" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ComboKey" msprop:Generator_ColumnVarNameInTable="columnComboKey" msprop:Generator_ColumnPropNameInRow="ComboKey" msprop:nullValue="0" msprop:Generator_ColumnPropNameInTable="ComboKeyColumn" msprop:Generator_UserColumnName="ComboKey" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="KeyManagerItem" msprop:Generator_TableClassName="KeyManagerItemDataTable" msprop:Generator_TableVarName="tableKeyManagerItem" msprop:Generator_RowChangedName="KeyManagerItemRowChanged" msprop:Generator_TablePropName="KeyManagerItem" msprop:Generator_RowDeletingName="KeyManagerItemRowDeleting" msprop:Generator_RowChangingName="KeyManagerItemRowChanging" msprop:Generator_RowEvHandlerName="KeyManagerItemRowChangeEventHandler" msprop:Generator_RowDeletedName="KeyManagerItemRowDeleted" msprop:Generator_RowClassName="KeyManagerItemRow" msprop:Generator_UserTableName="KeyManagerItem" msprop:Generator_RowEvArgName="KeyManagerItemRowChangeEvent" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <msdata:Relationship name="KeyManager_KeyManagerItem" msdata:parent="KeyManager" msdata:child="KeyManagerItem" msdata:parentkey="ID" msdata:childkey="ParentKey" msprop:Generator_UserChildTable="KeyManagerItem" msprop:Generator_ChildPropName="GetKeyManagerItemRows" msprop:Generator_UserRelationName="KeyManager_KeyManagerItem" msprop:Generator_RelationVarName="relationKeyManager_KeyManagerItem" msprop:Generator_UserParentTable="KeyManager" msprop:Generator_ParentPropName="KeyManagerRow" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" default="0" />
+                    <xs:element name="Name" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+                    <xs:element name="Arguments" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Arguments" msprop:Generator_ColumnVarNameInTable="columnArguments" msprop:Generator_ColumnPropNameInTable="ArgumentsColumn" msprop:Generator_UserColumnName="Arguments" type="xs:string" minOccurs="0" />
+                    <xs:element name="HotKey" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="HotKey" msprop:Generator_ColumnVarNameInTable="columnHotKey" msprop:Generator_ColumnPropNameInTable="HotKeyColumn" msprop:Generator_UserColumnName="HotKey" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:length value="1" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="ParentKey" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="ParentKey" msprop:Generator_ColumnVarNameInTable="columnParentKey" msprop:Generator_ColumnPropNameInTable="ParentKeyColumn" msprop:Generator_UserColumnName="ParentKey" type="xs:short" default="0" minOccurs="0" />
+                    <xs:element name="ActionType" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ActionType" msprop:Generator_ColumnVarNameInTable="columnActionType" msprop:Generator_ColumnPropNameInTable="ActionTypeColumn" msprop:Generator_UserColumnName="ActionType" type="xs:string" minOccurs="0" />
+                    <xs:element name="Application" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Application" msprop:Generator_ColumnVarNameInTable="columnApplication" msprop:Generator_ColumnPropNameInTable="ApplicationColumn" msprop:Generator_UserColumnName="Application" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="KeyManagerItem_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:KeyManagerItem" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:KeyManager" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
